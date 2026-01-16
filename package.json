@@ -1,7 +1,8 @@
 {
-  "name": "@SidneyBissoli/cid10-br-mcp",
-  "version": "1.0.0",
-  "description": "MCP Server para CID-10 Brasileira (DATASUS) - Classificação Internacional de Doenças",
+  "name": "cid10-br-mcp",
+  "version": "1.0.2",
+  "mcpName": "io.github.SidneyBissoli/cid10-br-mcp",
+  "description": "MCP Server for Brazilian ICD-10 (DATASUS) - International Classification of Diseases",
   "main": "dist/index.js",
   "bin": {
     "cid10-br-mcp": "./dist/index.js"
@@ -19,6 +20,7 @@
     "cid10",
     "cid-10",
     "icd10",
+    "icd-10",
     "datasus",
     "brazil",
     "brasil",
@@ -28,7 +30,9 @@
     "diagnosis",
     "claude",
     "ai",
-    "llm"
+    "llm",
+    "sus",
+    "healthcare"
   ],
   "author": "Sidney Bissoli <sbissoli76@gmail.com>",
   "license": "MIT",

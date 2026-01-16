@@ -32,3 +32,5 @@ coverage/
 
 # MCP Publisher auth (never commit!)
 .mcp-publisher/
+
+.mcpregistry_github_token
