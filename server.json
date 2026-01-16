@@ -1,0 +1,46 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "io.github.SidneyBissoli/cid10-br-mcp",
+  "description": "MCP Server para CID-10 Brasileira (DATASUS) - Classificação Internacional de Doenças versão brasileira. Permite buscar, consultar e validar códigos CID-10 usados no SUS, incluindo informações sobre restrições de sexo, possibilidade de causa de óbito e classificação cruz/asterisco.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/SidneyBissoli/cid10-br-mcp",
+    "source": "https://github.com/SidneyBissoli/cid10-br-mcp"
+  },
+  "packages": [
+    {
+      "registry_type": "npm",
+      "identifier": "@SidneyBissoli/cid10-br-mcp",
+      "version": "1.0.0",
+      "runtime": {
+        "type": "node"
+      }
+    }
+  ],
+  "tools": [
+    {
+      "name": "cid10_search",
+      "description": "Busca códigos CID-10 por termo (código ou descrição)"
+    },
+    {
+      "name": "cid10_lookup",
+      "description": "Consulta detalhes de um código CID-10 específico"
+    },
+    {
+      "name": "cid10_hierarchy",
+      "description": "Retorna todos os códigos sob uma categoria/prefixo"
+    },
+    {
+      "name": "cid10_capitulos",
+      "description": "Lista todos os 22 capítulos da CID-10"
+    },
+    {
+      "name": "cid10_stats",
+      "description": "Estatísticas gerais da base CID-10"
+    },
+    {
+      "name": "cid10_validar",
+      "description": "Valida código CID-10 para uso em sistemas de saúde"
+    }
+  ]
+}

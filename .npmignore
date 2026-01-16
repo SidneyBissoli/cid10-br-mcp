@@ -1,0 +1,27 @@
+# Source files (only dist goes to npm)
+src/
+
+# Config files
+tsconfig.json
+.gitignore
+.github/
+
+# Development files
+*.md
+!README.md
+
+# Test files
+test/
+*.test.ts
+*.spec.ts
+
+# IDE
+.vscode/
+.idea/
+
+# MCP Publisher
+server.json
+.mcp-publisher/
+
+# Guide (only for repo)
+GUIA_PASSO_A_PASSO.md
