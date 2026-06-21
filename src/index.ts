@@ -35,7 +35,7 @@ try {
 // Criar servidor MCP
 const server = new McpServer({
   name: 'cid10-br-mcp',
-  version: '1.0.0'
+  version: '1.0.3'
 });
 
 // ============================================================
