@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-06-21
+
+### Added
+- **MCP resources**: `cid10://capitulos` (the 22 chapters) and `cid10://estatisticas` (dataset metadata).
+- **MCP prompts**: `buscar_diagnostico` (find the best CID-10 code for a clinical term) and `explorar_categoria` (list subcategories under a prefix).
+
+
 ## [1.0.3] - 2026-06-21
 
 Supply-chain hardening release (no functional changes).

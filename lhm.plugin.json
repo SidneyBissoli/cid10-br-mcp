@@ -1,7 +1,7 @@
 {
   "identifier": "sidneybissoli-cid10-br-mcp",
   "name": "CID-10 Brasil MCP",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "MCP server for the Brazilian CID-10 (DATASUS V2008) - search, look up, validate and browse ICD-10 codes in Portuguese, fully offline from a bundled dataset.",
   "author": "Sidney Bissoli",
   "authorUrl": "https://github.com/SidneyBissoli",
@@ -61,6 +61,28 @@
       "inputSchema": {
         "type": "object"
       }
+    }
+  ],
+  "resources": [
+    {
+      "name": "capitulos",
+      "uri": "cid10://capitulos",
+      "description": "The 22 chapters of the Brazilian CID-10 (DATASUS V2008) with code ranges and descriptions."
+    },
+    {
+      "name": "estatisticas",
+      "uri": "cid10://estatisticas",
+      "description": "Metadata and statistics of the loaded CID-10 dataset (version, source, counts)."
+    }
+  ],
+  "prompts": [
+    {
+      "name": "buscar_diagnostico",
+      "description": "Find the most appropriate CID-10 code for a diagnosis, symptom or clinical term, with chapter/group context."
+    },
+    {
+      "name": "explorar_categoria",
+      "description": "List and summarize all CID-10 subcategories under a category/prefix."
     }
   ]
 }

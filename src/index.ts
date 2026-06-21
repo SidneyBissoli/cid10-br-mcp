@@ -35,7 +35,7 @@ try {
 // Criar servidor MCP
 const server = new McpServer({
   name: 'cid10-br-mcp',
-  version: '1.0.3'
+  version: '1.1.0'
 });
 
 // ============================================================
@@ -290,6 +290,90 @@ server.tool(
       }]
     };
   }
+);
+
+// ============================================================
+// RESOURCES
+// ============================================================
+server.resource(
+  'capitulos',
+  'cid10://capitulos',
+  {
+    description: 'Os 22 capítulos da CID-10 brasileira (DATASUS V2008), com intervalo de códigos e descrição.',
+    mimeType: 'application/json'
+  },
+  async () => ({
+    contents: [{
+      uri: 'cid10://capitulos',
+      mimeType: 'application/json',
+      text: JSON.stringify(
+        cid10Data.capitulos.map(c => ({
+          numero: c.numero,
+          intervalo: `${c.catinic}-${c.catfim}`,
+          descricao: c.descricao
+        })),
+        null,
+        2
+      )
+    }]
+  })
+);
+
+server.resource(
+  'estatisticas',
+  'cid10://estatisticas',
+  {
+    description: 'Metadados e estatísticas da base CID-10 brasileira carregada (versão, fonte e contagens).',
+    mimeType: 'application/json'
+  },
+  async () => ({
+    contents: [{
+      uri: 'cid10://estatisticas',
+      mimeType: 'application/json',
+      text: JSON.stringify({
+        versao: '2008',
+        fonte: 'DATASUS/Ministério da Saúde - Brasil',
+        url_fonte: 'http://www2.datasus.gov.br/cid10/V2008/cid10.htm',
+        total_capitulos: cid10Data.capitulos.length,
+        total_grupos: cid10Data.grupos.length,
+        total_categorias: cid10Data.categorias.length,
+        total_subcategorias: cid10Data.subcategorias.length
+      }, null, 2)
+    }]
+  })
+);
+
+// ============================================================
+// PROMPTS
+// ============================================================
+server.prompt(
+  'buscar_diagnostico',
+  'Encontra o código CID-10 mais apropriado para um diagnóstico, sintoma ou termo clínico, com contexto.',
+  { termo: z.string().describe('Diagnóstico, sintoma ou termo clínico (ex.: "infarto", "diabetes tipo 2")') },
+  async ({ termo }) => ({
+    messages: [{
+      role: 'user' as const,
+      content: {
+        type: 'text' as const,
+        text: `Encontre o código CID-10 brasileiro mais apropriado para "${termo}". Use cid10_search para localizar candidatos e, no melhor resultado, use cid10_lookup para mostrar a descrição completa, o capítulo, o grupo e eventuais restrições (sexo, causa de óbito). Apresente o código recomendado e 2-3 alternativas próximas.`
+      }
+    }]
+  })
+);
+
+server.prompt(
+  'explorar_categoria',
+  'Lista e resume todas as subcategorias CID-10 sob uma categoria/prefixo.',
+  { prefixo: z.string().describe('Prefixo da categoria CID-10 (ex.: "E11", "I10", "J45")') },
+  async ({ prefixo }) => ({
+    messages: [{
+      role: 'user' as const,
+      content: {
+        type: 'text' as const,
+        text: `Liste todas as subcategorias da CID-10 brasileira sob o prefixo "${prefixo}" usando cid10_hierarchy e apresente-as em uma tabela com código e descrição, indicando o capítulo e o grupo a que pertencem.`
+      }
+    }]
+  })
 );
 
 // ============================================================
