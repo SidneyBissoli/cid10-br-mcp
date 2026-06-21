@@ -4,7 +4,7 @@
 [![npm downloads](https://img.shields.io/npm/dm/cid10-br-mcp.svg)](https://www.npmjs.com/package/cid10-br-mcp)
 [![node](https://img.shields.io/node/v/cid10-br-mcp)](https://www.npmjs.com/package/cid10-br-mcp)
 [![MCP Registry](https://img.shields.io/badge/MCP-Registry-blue)](https://registry.modelcontextprotocol.io)
-[![LobeHub](https://lobehub.com/badge/mcp-full/sidneybissoli-cid10-br-mcp?theme=light)](https://lobehub.com/mcp/sidneybissoli-cid10-br-mcp)
+[![LobeHub](https://lobehub.com/badge/mcp/sidneybissoli-cid10-br-mcp)](https://lobehub.com/mcp/sidneybissoli-cid10-br-mcp)
 [![GitHub stars](https://img.shields.io/github/stars/SidneyBissoli/cid10-br-mcp?style=flat&logo=github)](https://github.com/SidneyBissoli/cid10-br-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
