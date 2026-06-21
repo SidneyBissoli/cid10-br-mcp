@@ -21,6 +21,10 @@ import {
   findGrupo
 } from './data-loader.js';
 import type { CID10Data } from './types.js';
+import { createRequire } from 'node:module';
+
+// Versão lida do package.json (fonte única — evita drift)
+const { version: SERVER_VERSION } = createRequire(import.meta.url)('../package.json') as { version: string };
 
 // Carregar dados na inicialização
 let cid10Data: CID10Data;
@@ -35,7 +39,7 @@ try {
 // Criar servidor MCP
 const server = new McpServer({
   name: 'cid10-br-mcp',
-  version: '1.1.0'
+  version: SERVER_VERSION
 });
 
 // ============================================================
