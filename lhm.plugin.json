@@ -1,0 +1,66 @@
+{
+  "identifier": "sidneybissoli-cid10-br-mcp",
+  "name": "CID-10 Brasil MCP",
+  "version": "1.0.3",
+  "description": "MCP server for the Brazilian CID-10 (DATASUS V2008) - search, look up, validate and browse ICD-10 codes in Portuguese, fully offline from a bundled dataset.",
+  "author": "Sidney Bissoli",
+  "authorUrl": "https://github.com/SidneyBissoli",
+  "homepage": "https://github.com/SidneyBissoli/cid10-br-mcp",
+  "icon": "🩺",
+  "category": "healthcare",
+  "tags": [
+    "cid-10",
+    "icd-10",
+    "datasus",
+    "sus",
+    "health",
+    "saude",
+    "brazil",
+    "medical",
+    "diagnosis"
+  ],
+  "tools": [
+    {
+      "name": "cid10_search",
+      "description": "Search CID-10 codes by term (code or description) in the Brazilian DATASUS table; accepts partial codes and free text.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "cid10_lookup",
+      "description": "Look up one CID-10 code: full description, sex restriction, cause-of-death flag, dagger/asterisk classification.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "cid10_hierarchy",
+      "description": "Return all CID-10 codes under a category/prefix (e.g. E11 returns all type-2 diabetes subcategories).",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "cid10_capitulos",
+      "description": "List all 22 chapters of the Brazilian CID-10.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "cid10_stats",
+      "description": "Return general statistics about the loaded CID-10 database.",
+      "inputSchema": {
+        "type": "object"
+      }
+    },
+    {
+      "name": "cid10_validar",
+      "description": "Validate whether a CID-10 code exists and is usable in health systems (AIH, APAC, SIM, etc.).",
+      "inputSchema": {
+        "type": "object"
+      }
+    }
+  ]
+}
