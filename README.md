@@ -1,4 +1,4 @@
-# 🏥 CID-10 BR MCP Server
+# 🏥 CID-10 Brasil MCP Server
 
 [![npm version](https://img.shields.io/npm/v/cid10-br-mcp.svg)](https://www.npmjs.com/package/cid10-br-mcp)
 [![MCP Registry](https://img.shields.io/badge/MCP-Registry-blue)](https://registry.modelcontextprotocol.io/?search=cid10)
