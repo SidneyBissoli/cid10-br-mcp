@@ -1,4 +1,4 @@
-# 🏥 CID-10 Brasil MCP Server
+# CID-10 Brasil MCP Server
 
 [![npm version](https://img.shields.io/npm/v/cid10-br-mcp.svg)](https://www.npmjs.com/package/cid10-br-mcp)
 [![npm downloads](https://img.shields.io/npm/dm/cid10-br-mcp.svg)](https://www.npmjs.com/package/cid10-br-mcp)
@@ -22,7 +22,7 @@ Ask your assistant, in plain Portuguese:
 
 The answers come straight from the bundled DATASUS V2008 dataset — official codes and descriptions, not guesses from training data.
 
-## ✨ Features
+## Features
 
 - 🔍 **Search** - Search codes by term (code or description)
 - 📋 **Lookup** - Get detailed information for a specific CID-10 code
@@ -30,7 +30,7 @@ The answers come straight from the bundled DATASUS V2008 dataset — official co
 - 📊 **Statistics** - General statistics about the CID-10 database
 - ✅ **Validation** - Validate codes for use in health systems (SUS)
 
-## 📦 Installation
+## Installation
 
 ### Using with Claude Desktop
 
@@ -68,7 +68,7 @@ Then add to Claude Desktop config:
 }
 ```
 
-## 🛠️ Available Tools
+## Available Tools
 
 | Tool | Description |
 |------|-------------|
@@ -79,7 +79,7 @@ Then add to Claude Desktop config:
 | `cid10_stats` | General statistics about the database |
 | `cid10_validar` | Validate a code for use in health systems |
 
-## 💡 Usage Examples
+## Usage Examples
 
 Once configured, you can ask Claude:
 
@@ -89,7 +89,7 @@ Once configured, you can ask Claude:
 - *"What are the chapters of CID-10?"*
 - *"Is F32.1 a valid code for medical records?"*
 
-## 📊 Data Source
+## Data Source
 
 The data comes from official DATASUS sources:
 - **CID-10-CAPITULOS.CSV** - 22 chapters
@@ -99,7 +99,7 @@ The data comes from official DATASUS sources:
 
 Source: [DATASUS - CID-10](http://www2.datasus.gov.br/cid10/V2008/cid10.htm)
 
-## 🔧 Development
+## Development
 
 ### Prerequisites
 
@@ -129,7 +129,7 @@ npm start
 npx @modelcontextprotocol/inspector node dist/index.js
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Feel free to:
 
@@ -139,17 +139,17 @@ Contributions are welcome! Feel free to:
 4. Push to the branch (`git push origin feature/new-feature`)
 5. Open a Pull Request
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👤 Author
+## Author
 
 **Sidney Bissoli**
 - GitHub: [@SidneyBissoli](https://github.com/SidneyBissoli)
 - Email: sbissoli76@gmail.com
 
-## 🔗 Links
+## Links
 
 - [npm package](https://www.npmjs.com/package/cid10-br-mcp)
 - [MCP Registry](https://registry.modelcontextprotocol.io/?search=cid10)
