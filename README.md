@@ -12,6 +12,16 @@
 
 A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that provides access to the Brazilian version of ICD-10 (CID-10), maintained by DATASUS/Ministry of Health of Brazil.
 
+## ✨ See it in action
+
+Ask your assistant, in plain Portuguese:
+
+- *"Qual o código CID-10 para infarto agudo do miocárdio?"* → `cid10_search` / `cid10_lookup`
+- *"Liste todas as subcategorias do diabetes tipo 2 (E11)."* → `cid10_hierarchy`
+- *"O código C50 é válido e pode ser causa de óbito?"* → `cid10_validar`
+
+The answers come straight from the bundled DATASUS V2008 dataset — official codes and descriptions, not guesses from training data.
+
 ## ✨ Features
 
 - 🔍 **Search** - Search codes by term (code or description)
