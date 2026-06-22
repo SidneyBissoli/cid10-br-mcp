@@ -8,6 +8,8 @@
 [![GitHub stars](https://img.shields.io/github/stars/SidneyBissoli/cid10-br-mcp?style=flat&logo=github)](https://github.com/SidneyBissoli/cid10-br-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+🇧🇷 [Leia em Português](README.pt-BR.md)
+
 **MCP Server for Brazilian ICD-10 (DATASUS) - International Classification of Diseases**
 
 A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that provides access to the Brazilian version of ICD-10 (CID-10), maintained by DATASUS/Ministry of Health of Brazil.
