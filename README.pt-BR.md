@@ -6,6 +6,7 @@
 [![MCP Registry](https://img.shields.io/badge/MCP-Registry-blue)](https://registry.modelcontextprotocol.io)
 [![LobeHub](https://lobehub.com/badge/mcp/sidneybissoli-cid10-br-mcp)](https://lobehub.com/mcp/sidneybissoli-cid10-br-mcp)
 [![GitHub stars](https://img.shields.io/github/stars/SidneyBissoli/cid10-br-mcp?style=flat&logo=github)](https://github.com/SidneyBissoli/cid10-br-mcp)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/SidneyBissoli?logo=githubsponsors&label=Sponsor&color=db61a2)](https://github.com/sponsors/SidneyBissoli)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 🇺🇸 [Read in English](README.md)
