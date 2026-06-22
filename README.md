@@ -24,11 +24,11 @@ The answers come straight from the bundled DATASUS V2008 dataset — official co
 
 ## Features
 
-- 🔍 **Search** - Search codes by term (code or description)
-- 📋 **Lookup** - Get detailed information for a specific CID-10 code
-- 🌳 **Hierarchy** - Navigate the hierarchical structure (chapters, groups, categories, subcategories)
-- 📊 **Statistics** - General statistics about the CID-10 database
-- ✅ **Validation** - Validate codes for use in health systems (SUS)
+- **Search** - Search codes by term (code or description)
+- **Lookup** - Get detailed information for a specific CID-10 code
+- **Hierarchy** - Navigate the hierarchical structure (chapters, groups, categories, subcategories)
+- **Statistics** - General statistics about the CID-10 database
+- **Validation** - Validate codes for use in health systems (SUS)
 
 ## Installation
 
@@ -158,4 +158,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Made with ❤️ for the Brazilian health community
+Made for the Brazilian health community
