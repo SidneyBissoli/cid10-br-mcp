@@ -12,7 +12,7 @@
 
 A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that provides access to the Brazilian version of ICD-10 (CID-10), maintained by DATASUS/Ministry of Health of Brazil.
 
-## ✨ See it in action
+## See it in action
 
 Ask your assistant, in plain Portuguese:
 
