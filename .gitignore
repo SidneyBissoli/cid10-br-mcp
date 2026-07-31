@@ -34,3 +34,6 @@ coverage/
 .mcp-publisher/
 
 .mcpregistry_github_token
+
+# credenciais
+.mcpregistry_registry_token
