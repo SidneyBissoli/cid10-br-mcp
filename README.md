@@ -1,5 +1,15 @@
 # CID-10 Brasil MCP Server
 
+> [!WARNING]
+> **This package is deprecated.** It has been superseded by
+> [`medical-terminologies-mcp`](https://github.com/SidneyBissoli/medical-terminologies-mcp)
+> ([npm](https://www.npmjs.com/package/medical-terminologies-mcp)), which serves the same
+> full Brazilian CID-10 (DataSUS V2008) plus ICD-11, LOINC, RxNorm, MeSH, ATC and the
+> authoritative WHO ICD-10→ICD-11 crosswalk, with source provenance on every response —
+> and also offers a hosted endpoint at `https://medical.sidneybissoli.com/mcp` (no
+> install needed). This repository stays available for reference but will receive no
+> further updates.
+
 [![npm version](https://img.shields.io/npm/v/cid10-br-mcp.svg)](https://www.npmjs.com/package/cid10-br-mcp)
 [![npm downloads](https://img.shields.io/npm/dm/cid10-br-mcp.svg)](https://www.npmjs.com/package/cid10-br-mcp)
 [![node](https://img.shields.io/node/v/cid10-br-mcp)](https://www.npmjs.com/package/cid10-br-mcp)

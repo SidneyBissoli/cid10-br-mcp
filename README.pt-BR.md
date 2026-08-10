@@ -1,5 +1,15 @@
 # CID-10 Brasil MCP Server
 
+> [!WARNING]
+> **Este pacote está descontinuado (deprecated).** Ele foi sucedido pelo
+> [`medical-terminologies-mcp`](https://github.com/SidneyBissoli/medical-terminologies-mcp)
+> ([npm](https://www.npmjs.com/package/medical-terminologies-mcp)), que serve a mesma
+> CID-10 brasileira completa (DataSUS V2008) e ainda ICD-11, LOINC, RxNorm, MeSH, ATC e o
+> mapeamento oficial OMS CID-10→CID-11, com proveniência da fonte em toda resposta —
+> além de oferecer um endpoint hospedado em `https://medical.sidneybissoli.com/mcp`
+> (sem instalar nada). Este repositório permanece disponível para consulta, mas não
+> receberá novas atualizações.
+
 [![npm version](https://img.shields.io/npm/v/cid10-br-mcp.svg)](https://www.npmjs.com/package/cid10-br-mcp)
 [![npm downloads](https://img.shields.io/npm/dm/cid10-br-mcp.svg)](https://www.npmjs.com/package/cid10-br-mcp)
 [![node](https://img.shields.io/node/v/cid10-br-mcp)](https://www.npmjs.com/package/cid10-br-mcp)
